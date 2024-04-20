@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    
+
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+        <nav>
+            <h1 class="logo">Priyanka</h1>
+            <ul>
+            <li><a href="#" class="active">Home</a></li>
+            <li><a href="#" class="active">About Me</a></li>
+            <!-- <li><a href="#">Projects</a></li> -->
+            <li><a href="#">Contact</a></li>
+            <i class='bx bx-window-close' ></i>
+        </ul>
+        <i class='bx bx-menu'></i>
+
+        </nav>
+    
+   <div class="header-text">
+            <p>Fullstack Developer</p>
+             <h3>Hi,I'm <span>Priyanka </span> Savanur</h3>
+            
+            
+        </div>
+       </div>
+    </div>
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                <h1 class="sub-title">About Me</h1>
+                <p>
+                  I am an organised and motivated student who is looking forward to showcases all my skill and build the organisation<br><br>
+                  </p>
+                 <h5>For more details.</h5>
+                 <br> <a href="./priya_resume.docx" class="btn btn2">Download CV</a>
+                </div>
+                <div class="about-col-2">
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                    <p class="tab-links" onclick="opentab('education')">Education</p>
+                    <p class="tab-links" onclick="opentab('projects')">Projects</p>
+                    
+                    
+
+                </div>
+
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><span>FRONTEND</span><br>HTML,CSS,Javascript</li>
+                        <li><span>PYTHON</span><br>Django</li>
+                        <li><span>DATABASE</span><br>MYSQL</li>
+                        <li><span>REACTJS</span><br></li>
+
+                    </ul>
+                </div>
+                <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span>Class X</span><br>South Western Railway Womens Welfare Organisation</li>
+                        <li><span>Class XII</span><br>Adarsh Pre-University Science College</li>
+                        <li><span>Graduation</span><br>KLE'S BCA HUBBALLI</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="projects">
+                    <ul>
+                        <li><span>Dynamic calculator</span><br>Html,css,javascript</li>
+                        <li><span>Guessing game</span><br>Html,js</li>
+                        <li><span>Flipkart website</span><br>bootstarp</li>
+                        
+                    </ul>
+                </div>
+                </div>
+            </div>
+        </div>
+    
+</div>
+    
+      <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact</h1>
+                    <p><i class='bx bx-send' ></i>priyankajspriyankajs08@gmail.com</p>
+                    <p><i class='bx bxs-phone' ></i>7026625610</p>
+                    <div class="social-icons">
+                        <a href=""><i class='bx bxl-linkedin'></i></a>
+                        <a href=""></a>
+                        <a href=""></a>
+                        <a href=""></a>
+                    </div>
+                    <!-- <a href="./priya_resume.docx" class="btn btn2">Download CV</a> -->
+                </div>
+                <div class="contact-right">
+                    <form>
+                        <input type="text" name="Name" placeholder="Your name" required>   
+                        <input type="email" name="Name" placeholder="Your email" required>
+                        <textarea type="Message" rows="6" name="Name" placeholder="Your Meassage"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>                 </form>
+                </div>
+            </div>
+
+        </div>
+        <div class="copyright">
+            <p></p>
+        </div>
+      </div>
+<script>
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+    
+</script>
+
+
+
+
+
+
+            <!-- <p>Iam Priyanka
+
+                from hubballi, currently living in banglore.I completed my graduation at KLES BCA HUBBALLI.
+                
+                My short-term goal is to get a good job in reputed company where I can gain knowledge and enhance my skills.
+                
+                My long-term goal is to reach valuable position.</p> -->
+       <!-- <div class="btn-box">
+       <a href="./priya_resume.docx">Download CV</a>
+        <a href="#">lets</a>
+       </div>
+        -->
+        </div>
+       
+
+        
+   
+</body>
+</html>
